@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analy X - Avaliador de Prompts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Analy X</h1>
+    <button id="analyzeBtn">Desejo analisar</button>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Analisar Prompt</h2>
+      <textarea id="promptInput" placeholder="Cole seu prompt aqui..."></textarea>
+      <button id="sendBtn">Analisar</button>
+      <div id="loading" class="hidden">Analisando...</div>
+      <div id="result" class="hidden">
+        <h3>Categoria: <span id="quality"></span></h3>
+        <ul id="suggestions"></ul>
+        <button id="exportPdfBtn">Exportar PDF</button>
+        <button id="copyBtn">Copiar</button>
+        <button id="doneBtn">Concluído</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
